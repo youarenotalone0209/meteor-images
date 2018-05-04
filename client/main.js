@@ -16,7 +16,7 @@
         componentWillMount() {
             // Fantastic place to load data!
             // This is called only one time before the DOM render
-            axios.get('https://api.imgur.com/3/gallery/hot/viral/0')
+            axios.get('https://api.imgur.com/3/gallery/hot/viral/0.json')
                 .then(response => this.setState({ images: response.data.data }));
         }
 
